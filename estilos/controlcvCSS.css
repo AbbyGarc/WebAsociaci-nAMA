@@ -1,0 +1,82 @@
+/*Inicio*/
+html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 12vh;
+    float: left;
+    display: inline;
+    text-align: center;
+    border: 1px solid rgb(255, 125, 0);
+}
+div.logo{
+    width: 10%;
+    height: 100%;
+    float: left;
+    display: inline;
+    border-radius: 100%;
+}
+div.logo img {
+    width: 100%;
+    height: 100%;
+}
+header h1 {
+    width: 80%;
+    height: 70%;
+    float: left;
+    display: inline;
+    margin: 1%;
+    border: 1px solid rgb(255, 125, 0);
+}
+div.menu{
+    width: 6%;
+    height: 100%;
+    float: left;
+    display: inline;
+}
+div.menu img {
+    width: 100%;
+    height: 100%;
+}
+main {
+    width: 99%;
+    min-height:75vh;
+    padding: 1%;
+    float: left;
+    border: 1px solid rgb(255, 125, 0);
+}
+footer {
+    width: 99%;
+    min-height:4.9vh;
+    padding: 1%;
+    float: left;
+    border: 1px solid rgb(255, 125, 0);
+}
+div.legal {
+    width: fit-content;
+    height: 100%;
+    float: left;
+    display: inline;
+}
+div.link {
+    width: fit-content;
+    height: 100%;
+    float: right;
+    display: inline;
+}
+div {
+    float: left;
+    display: inline;
+    border-radius: 10px;
+    padding: 2px;
+    border: 1px solid rgb(255, 125, 0);
+}
+/*Generico*/
