@@ -1,4 +1,5 @@
 /*Inicio*/
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 html {
     width: 100%;
     height: 100vh;
@@ -6,7 +7,7 @@ html {
 }
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
 }
 header{
@@ -15,68 +16,135 @@ header{
     float: left;
     display: inline;
     text-align: center;
-    border: 1px solid rgb(255, 125, 0);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/793/295/non_2x/wood-texture-pattern-dark-brown-design-background-vector.jpg);
+    position: fixed;
+    top: 0;
 }
 div.logo{
     width: 10%;
-    height: 100%;
+    height: 98%;
     float: left;
     display: inline;
     border-radius: 100%;
+    background-color: rgba(120, 120, 120, 0.100);
+    border: 0px;
 }
 div.logo img {
     width: 100%;
     height: 100%;
 }
 header h1 {
-    width: 80%;
-    height: 70%;
+    width: 50%;
+    margin: 0px 15%;
+    height: 75%;
     float: left;
     display: inline;
-    margin: 1%;
-    border: 1px solid rgb(255, 125, 0);
+    padding:  1% 0px 0px 0px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-shadow: 3px 3px rgb(150 150 150);
+    font-size: 400%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/197/193/original/golden-decorative-banner-png.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 div.menu{
     width: 6%;
-    height: 100%;
-    float: left;
+    height: 98%;
+    float: right;
     display: inline;
+    border: 0px;
+    border-radius: 100%;
 }
 div.menu img {
-    width: 100%;
-    height: 100%;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
 }
 main {
+    margin-top: 12vh;
     width: 99%;
-    min-height:75vh;
+    min-height:74.6vh;
     padding: 1%;
     float: left;
-    border: 1px solid rgb(255, 125, 0);
+    background-color: rgb(30, 30, 30);
+    color: white;
 }
 footer {
     width: 99%;
-    min-height:4.9vh;
-    padding: 1%;
+    min-height:4vh;
+    padding: 0.5%;
     float: left;
-    border: 1px solid rgb(255, 125, 0);
 }
 div.legal {
-    width: fit-content;
+    width: auto;
     height: 100%;
     float: left;
     display: inline;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 5px 10px;
+}
+div.legal a {
+    color: rgb(225, 215, 70);
+    padding: 0px 8px;
+    text-decoration: none;
 }
 div.link {
-    width: fit-content;
-    height: 100%;
+    width: 10%;
+    height: 80%;
     float: right;
     display: inline;
+    border-radius: 20px;
+    border-image: none;
+    border: 5px white;
+}
+div.link img {
+    width: 100%;
+    height: 100%;
+}
+div.copyleft {
+    width: 3.4%;
+    float: right;
+    display: inline;
+    border-radius: 100%;
+    border-image: none;
+    border: 5px white;
+}
+div.copyleft img {
+    width: 100%;
+    height: 100%;
 }
 div {
     float: left;
     display: inline;
-    border-radius: 10px;
     padding: 2px;
-    border: 1px solid rgb(255, 125, 0);
+    border: 5px solid;
+    color: black;
+    border: rgb(212, 175, 55) 5px solid;
+    border-radius: 10px;
+}
+div.copyleftText {
+    width: 30%;
+    float: right;
+    border: 0px;
+}
+div.copyleftText p {
+    float: right;
+    vertical-align: middle;
+    padding-right: 5px;
+    margin: 4% 0px;
+}
+div.legal a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 2px 2px 5px rgb(212, 175, 55);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(212, 175, 55);
+}
+div.link:hover:not(.active) {
+    background-color:  rgb(212, 175, 55);
+}
+div.copyleft:hover:not(.active) {
+    background-color:  rgb(212, 175, 55);
 }
 /*Generico*/
