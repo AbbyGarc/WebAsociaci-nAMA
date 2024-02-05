@@ -72,7 +72,7 @@ main {
     float: left;
     background-image: url(https://img.freepik.com/foto-gratis/fondo-piso-madera_53876-88628.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     color: white;
 }
 footer {
