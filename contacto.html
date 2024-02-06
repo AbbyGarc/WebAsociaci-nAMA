@@ -8,6 +8,7 @@
     <meta name="description" content="Somos una comunidad dedicada a jugar magic the gathering, en concreto el formato de commander en nuestro instituto IES Villablanca">
     <title>Comunidad Commander</title>
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
+    <link rel="stylesheet" href="./estilos/contacto.css">
     <script src="./codigo/controlcvJS.js"></script>
     <link rel="shortcut icon" href="https://cdn-cardmavin.mavin.io/wp-content/uploads/2018/07/lorwyn-set-symbol-magic-the-gathering.png">
 </head>
@@ -17,14 +18,48 @@
             <img src="" alt="icono">
         </div>
         <h1>
-            Comunidad Commander
+            Registro
         </h1>
         <div class="menu">
             <img src="https://64.media.tumblr.com/d6086cd81797c758c8ec2938f5d04d57/tumblr_nbn8yujFiZ1qc29lyo2_1280.png" alt="icono">
         </div>
     </header>
     <main>
-        <div>Contenido</div>
+        <div class="fondoFormulario">
+            <div id="formulario">
+                <form action="mailto:admin@asociacion.org" method="post">
+                    <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" required placeholder="Introduzca su nombre."><br>
+                    <label for="apellido1">Primer Apellido:</label><input type="text" id="apellido1" name="primerapellido" required placeholder="Introduzca su primer apellido."><br>
+                    <label for="apellido2">Segundo Apellido:</label><input type="text" id="apellido2" name="segundoapellido" placeholder="Introduzca su segundo apellido."><br>
+                    <label for="DNI">Documento Identidad:</label><input type="text" id="DNI" name="DNI" required placeholder="Introduzca su DNI o documento de identidad."><br>
+                    <label for="estadocivil">Estado Civil:</label>
+                        <input type="radio" name="estadocivil" id="estadocivil">Soltero
+                        <input type="radio" name="estadocivil" id="estadocivil">Casado
+                        <input type="radio" name="estadocivil" id="estadocivil">Divorciado <br>
+                    <label for="correo">Correo electronico:</label><input type="email" name="correo" id="correo" required placeholder="Introduzca su correo electronico."><br>
+                    <label for="telefono">Telefono:</label><input type="tel" name="telefono" id="telefono" placeholder="Introduzca su número de telefono."><br>
+                    <label for="disponibilidad">Disponibilidad:</label><br>
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Lunes 
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Martes
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Miercoles<br>
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Jueves
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Viernes<br>
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Sabado
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Domingo <br>
+                    <label for="motivacion">Motivación para entrar: </label><br>
+                        <input type="checkbox" name="motivacion" id="motivacion">Participar en actividades <br>
+                        <input type="checkbox" name="motivacion" id="motivacion">Preparar actividades <br>
+                        <input type="checkbox" name="motivacion" id="motivacion">Acompañar a un menor <br>
+                        <input type="checkbox" name="motivacion" id="motivacion">Curiosidad por la asociación <br>
+                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacion" id="motivacion"> <br>
+                    <label for="textarea">Observaciones: </label><br>
+                        <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea><br>
+                        <input type="checkbox" name="privaciadad" id="privacidad"> Política de privacidad y aviso legal. <br>
+                        <input type="checkbox" name="noticias" id="noticias"> Deseo recibir noticias y infromes de esta página. <br>
+                        <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="contact">
@@ -33,10 +68,10 @@
             Andre.A: <a href="">andrei.achim@educa.madrid.org</a><br>
         </div>
         <div class="link">
-            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/"><img src="https://site.educa.madrid.org/ies.villablanca.madrid//wp-content/uploads/ies.villablanca.madrid/2020/06/cropped-cropped-IES-Villablanca-horizontal-color-2.png" alt=""></a>
+            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/"><img src="https://site.educa.madrid.org/ies.villablanca.madrid//wp-content/uploads/ies.villablanca.madrid/2020/06/cropped-cropped-IES-Villablanca-horizontal-color-2.png" alt="Imagen con el logo del instituto I.E.S. Villablanca"></a>
         </div>
         <div class="copyleft">
-            <a href="https://es.wikipedia.org/wiki/Copyleft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/220px-Copyleft.svg.png" alt=""></a>
+            <a href="https://es.wikipedia.org/wiki/Copyleft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/220px-Copyleft.svg.png" alt="Símbolo de Copyleft"></a>
         </div>
         <div class="copyleftText">
             <p>El contenido de esta página esta protegido por copyleft</p>
