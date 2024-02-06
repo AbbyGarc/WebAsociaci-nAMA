@@ -13,18 +13,16 @@ header{
 }
 #formulario {
     font-style: italic;
-    font-size: 115%;
+    font-size: large;
     position: relative;
     text-align: center;
     top: 20vh;
     width: 95vh;
-    height: 60vh;
     background-image: none;
     border: none;
 }
 input {
     font-style: italic;
-    font-size: large;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid black;
