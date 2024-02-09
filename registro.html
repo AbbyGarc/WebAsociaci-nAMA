@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
     <link rel="stylesheet" href="./estilos/registro.css">
     <script src="./codigo/controlcvJS.js"></script>
+    <script src="./codigo/registro.js"></script>
     <link rel="shortcut icon" href="https://cdn-cardmavin.mavin.io/wp-content/uploads/2018/07/lorwyn-set-symbol-magic-the-gathering.png">
 </head>
 <body>
@@ -54,7 +55,7 @@
                     <label for="motivacionOtro">Otro: </label><input type="text" name="motivacion" id="motivacion"> <br>
                     <label for="textarea">Observaciones: </label><br>
                         <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea><br>
-                        <input type="checkbox" name="privaciadad" id="privacidad"> Política de privacidad y aviso legal. <br>
+                        <input type="checkbox" name="privaciadad" id="privacidad" onclick="confirmPrivacidad()"> Política de privacidad y aviso legal. <br>
                         <input type="checkbox" name="noticias" id="noticias"> Deseo recibir noticias y infromes de esta página. <br>
                         <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
                 </form>
