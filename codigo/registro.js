@@ -1,9 +1,8 @@
 function confirmPrivacidad (){
-    var privacidad = getElementById(privacidad)
-    if(privacidad == true){
-    alert("Usted ha aceptado las politicas de privacidad.")
-    } else {
-        alert("Usted no ha aceptado las politicas de privacidad.\n" 
-        + "Si desea registrarse porfavor acepte las politicas de privacidad.")
+    var checkbox = document.getElementById('privacidad');
+    checkbox.addEventListener( 'change', function() {
+    if(this.checked) {
+       alert("Al marcar esta casillººººººa confirma que se ha leido las politicas de privacidad y está de acuerdo a ellas.");
     }
+});
 }
