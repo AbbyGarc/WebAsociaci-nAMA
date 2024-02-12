@@ -1,0 +1,70 @@
+div.container {
+    width: 60%;
+    height: 60%;
+    margin-right: 3%;
+    border: none;
+    background: none;
+}
+div.text {
+    margin: 5px;
+    border: none;
+    background: none;
+}
+div.direccion img {
+    width: 32%;
+    margin-right: 3%;
+    border: none;
+    background: none;
+    display: inline;
+}
+form {
+    float: left;
+    display: inline;
+    padding: 3%;
+    width: 30%;
+    color: black;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/012/981/795/original/old-parchment-paper-sheet-vintage-aged-or-texture-background-png.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+table {
+    width: fit-content;
+}
+tr {
+    width: fit-content;
+}
+fieldset {
+    padding: 1%;
+    width: fit-content;
+    border: 2px solid rgb(180, 0, 0);
+    border-radius: 10px;
+}
+td {
+    width: fit-content;
+}
+td.center {
+    padding: 1%;
+    text-align: center;
+}
+textarea {
+    width: 99%;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.500);
+    border: solid rgb(0, 0, 0) 1px;
+}
+input.txt {
+    width: 98%;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.500);
+    border: solid rgb(0, 0, 0) 1px;
+}
+button {
+    border-radius: 20px;
+    border: solid 2px rgb(75, 0, 0);
+    background-color: rgb(180, 0, 0);
+    color: white;
+}
+#rank {
+    width: 35%;
+    margin: auto;
+}
