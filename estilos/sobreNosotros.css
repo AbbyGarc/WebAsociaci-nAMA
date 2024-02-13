@@ -1,0 +1,15 @@
+main div {
+    margin: 5%;
+}
+
+.imagen{
+    display: flex;
+    width: 90%;
+    height: 100%;
+}
+
+.texto{
+    display: flex;
+    width: 90%;
+    height: 150%;
+}
