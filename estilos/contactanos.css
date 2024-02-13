@@ -1,11 +1,3 @@
-h1 {
-    width: 10%;
-    margin: 2px auto 10px auto;
-    text-align: center;
-    border: 5px solid rgb(212, 175, 55);
-    border-radius: 50px;
-    background-color:rgb(255, 255, 255);
-}
 div.container {
     width: 60%;
     height: 60%;

@@ -51,6 +51,8 @@ header h1 {
     border-radius: 50px;
     text-shadow: 3px 3px rgb(212, 175, 55);
     font-size: 400%;
+    text-align: center;
+    margin: 2px auto 10px auto;
 }
 div.menu{
     width: 4%;
