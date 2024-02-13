@@ -9,8 +9,7 @@
     <title>Comunidad Commander</title>
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
     <link rel="stylesheet" href="./estilos/registro.css">
-    <script src="./codigo/controlcvJS.js"></script>
-    <script src="./codigo/registro.js"></script>
+    <script src="./codigo/controlcvJS.js"></script> 
     <link rel="shortcut icon" href="https://cdn-cardmavin.mavin.io/wp-content/uploads/2018/07/lorwyn-set-symbol-magic-the-gathering.png">
 </head>
 <body>
@@ -29,37 +28,38 @@
         <div class="fondoFormulario">
             <h1>Registro</h1>
             <div id="formulario">
-                <form action="mailto:admin@asociacion.org" method="post">
+                <form action="mailto:admin@asociacion.org" method="post" id="myform">
                     <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" required placeholder="Introduzca su nombre."><br>
                     <label for="apellido1">Primer Apellido:</label><input type="text" id="apellido1" name="primerapellido" required placeholder="Introduzca su primer apellido."><br>
                     <label for="apellido2">Segundo Apellido:</label><input type="text" id="apellido2" name="segundoapellido" placeholder="Introduzca su segundo apellido."><br>
-                    <label for="DNI">Documento Identidad:</label><input type="text" id="DNI" name="DNI" required placeholder="Introduzca su DNI o documento de identidad."><br>
+                    <label for="DNI">Documento Identidad:</label><input type="text" id="dni" name="dni" required placeholder="Introduzca su DNI o documento de identidad."><br>         
+                    <label for="correo">Correo electrónico:</label><input type="email" name="correo" id="correo" required placeholder="Introduzca su correo electrónico."><br>
+                    <label for="telefono">Teléfono:</label><input type="tel" name="telefono" id="telefono" placeholder="Introduzca su número de telefono."><br>
                     <label for="estadocivil">Estado Civil:</label>
                         <input type="radio" name="estadocivil" id="estadocivil">Soltero
                         <input type="radio" name="estadocivil" id="estadocivil">Casado
                         <input type="radio" name="estadocivil" id="estadocivil">Divorciado <br>
-                    <label for="correo">Correo electronico:</label><input type="email" name="correo" id="correo" required placeholder="Introduzca su correo electronico."><br>
-                    <label for="telefono">Telefono:</label><input type="tel" name="telefono" id="telefono" placeholder="Introduzca su número de telefono."><br>
                     <label for="disponibilidad">Disponibilidad:</label><br>
                         <input type="checkbox" name="disponibilidad" id="disponibilidad">Lunes 
                         <input type="checkbox" name="disponibilidad" id="disponibilidad">Martes
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Miercoles<br>
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Miércoles<br>
                         <input type="checkbox" name="disponibilidad" id="disponibilidad">Jueves
                         <input type="checkbox" name="disponibilidad" id="disponibilidad">Viernes<br>
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Sabado
+                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Sábado
                         <input type="checkbox" name="disponibilidad" id="disponibilidad">Domingo <br>
                     <label for="motivacion">Motivación para entrar: </label><br>
                         <input type="checkbox" name="motivacion" id="motivacion">Participar en actividades <br>
                         <input type="checkbox" name="motivacion" id="motivacion">Preparar actividades <br>
                         <input type="checkbox" name="motivacion" id="motivacion">Acompañar a un menor <br>
                         <input type="checkbox" name="motivacion" id="motivacion">Curiosidad por la asociación <br>
-                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacion" id="motivacion"> <br>
+                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacion" id="motivacion2"> <br>
                     <label for="textarea">Observaciones: </label><br>
                         <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea><br>
-                        <input type="checkbox" name="privaciadad" id="privacidad" onclick="confirmPrivacidad()"> Política de privacidad y aviso legal. <br>
-                        <input type="checkbox" name="noticias" id="noticias"> Deseo recibir noticias y infromes de esta página. <br>
-                        <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
+                        <input type="checkbox" name="privacidad" id="privacidad" onclick="confirmPrivacidad()"> Política de privacidad y aviso legal. <br>
+                        <input type="checkbox" name="noticias" id="noticias"> Deseo recibir noticias y informes de esta página. <br>
+                        <input type="submit" value="Enviar" onclick="createDocument()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
                 </form>
+                <script src="./codigo/registro.js"></script>
             </div>
         </div>
     </main>
