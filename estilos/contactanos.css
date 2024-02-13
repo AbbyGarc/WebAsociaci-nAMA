@@ -1,3 +1,11 @@
+h1 {
+    width: 10%;
+    margin: 2px auto 10px auto;
+    text-align: center;
+    border: 5px solid rgb(212, 175, 55);
+    border-radius: 50px;
+    background-color:rgb(255, 255, 255);
+}
 div.container {
     width: 60%;
     height: 60%;
@@ -17,16 +25,6 @@ div.direccion img {
     background: none;
     display: inline;
 }
-form {
-    float: left;
-    display: inline;
-    padding: 3%;
-    width: 30%;
-    color: black;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/012/981/795/original/old-parchment-paper-sheet-vintage-aged-or-texture-background-png.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
 table {
     width: fit-content;
 }
@@ -36,8 +34,19 @@ tr {
 fieldset {
     padding: 1%;
     width: fit-content;
-    border: 2px solid rgb(180, 0, 0);
+    border: 5px solid rgb(212, 175, 55);
     border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    color: black;
+}
+legend {
+    padding: 0;
+}
+fieldset h2 {
+    border: 4px solid rgb(212, 175, 55);
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    padding: 2px 5px;
 }
 td {
     width: fit-content;
@@ -49,19 +58,26 @@ td.center {
 textarea {
     width: 99%;
     border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.500);
-    border: solid rgb(0, 0, 0) 1px;
+    background-color:rgb(230, 230, 230);
+    border: solid rgb(212, 175, 55) 2px;
 }
 input.txt {
     width: 98%;
     border-radius: 5px;
-    background-color:rgba(255, 255, 255, 0.500);
-    border: solid rgb(0, 0, 0) 1px;
+    background-color:rgb(230, 230, 230);
+    border: solid rgb(212, 175, 55) 2px;
 }
 button {
+    font-size: larger;
     border-radius: 20px;
-    border: solid 2px rgb(75, 0, 0);
-    background-color: rgb(180, 0, 0);
+    border: solid 3px rgb(135, 110, 35);
+    background-color: rgb(212, 175, 55);
+    color: white;
+}
+button:hover:not(.active) {
+    border-radius: 20px;
+    border: solid 3px rgb(212, 175, 55);
+    background-color: rgb(135, 110, 35);
     color: white;
 }
 #rank {
