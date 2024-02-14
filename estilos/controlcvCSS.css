@@ -20,6 +20,7 @@ header{
     border-bottom: 10px solid rgb(212, 175, 55);
     position: fixed;
     top: 0;
+    box-shadow: 5px -10px 18px 10px rgb(212, 175, 55);
 }
 div.titulo{
     width: 89%;
@@ -145,6 +146,7 @@ main div {
     background-color: white;
     border: rgb(212, 175, 55) 5px solid;
     border-radius: 10px;
+    box-shadow: 5px 5px 18px rgb(100, 100, 100);
 }
 footer p {
     float: right;

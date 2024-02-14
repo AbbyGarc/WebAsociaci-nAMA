@@ -1,12 +1,13 @@
 div.direccion {
     width: 60%;
     height: 60%;
-    margin-right: 3%;
+    margin-right: 2%;
 }
 div.text {
     margin: 5px;
     border: none;
     background: none;
+    box-shadow: none;
 }
 div.direccion img {
     width: 32%;
@@ -19,7 +20,16 @@ div.admin {
     margin: 1% 3% 0px auto ;
     width: 60%;
     height: 60%;
-    margin-right: 3%;
+    margin-right: 2%;
+}
+img.mihaku {
+    width: 98%;
+    height: 98%;
+    border: 5px solid rgb(160, 0, 0);
+    border-radius: 100%;
+}
+table.admin tr td {
+    padding: 1%;
 }
 h2.contacto {
     width: 100%;
@@ -38,6 +48,7 @@ fieldset {
     border-radius: 10px;
     background-color:rgb(255, 255, 255);
     color: black;
+    box-shadow: 5px 5px 18px rgb(100, 100, 100);
 }
 legend {
     padding: 0;
