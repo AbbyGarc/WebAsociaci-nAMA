@@ -19,15 +19,18 @@ table tr td{
 table{
     background-color: rgb(212, 175, 55);
 }
-div.videazos{
-    margin: 1% 24%;
+table.videazos{
+    margin: 1% 10%;
     margin: auto;
     padding: 0%;
     background-color: rgb(212, 175, 55);
     top: 45%;
     right: 50%;
     width: 50%;
-
+    border-radius: 10px;
+}
+iframe {
+    border-radius: 10px;
 }
 div.videazo{
     margin: 1% 24%;
@@ -39,6 +42,7 @@ div.textaco{
 }
 main{
     text-align: center;
+    font-size: 16px;
 
 }
 h2{
@@ -46,5 +50,7 @@ h2{
     text-align: center;
     font-family: 'UnifrakturMaguntia', cursive;
     background-color: black;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 
