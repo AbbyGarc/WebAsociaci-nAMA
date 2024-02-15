@@ -95,3 +95,10 @@ button:hover:not(.active) {
     width: 35%;
     margin: auto;
 }
+table.admin a {
+    text-decoration: none;
+    color: rgb(135, 110, 35);
+}
+table.admin a:hover:not(.active) {
+    text-shadow: 2px 2px 5px rgb(212, 175, 55);
+}
