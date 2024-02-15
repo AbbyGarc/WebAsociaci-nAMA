@@ -36,28 +36,28 @@
                     <label for="correo">Correo electrónico:</label><input type="email" name="correo" id="correo" required placeholder="Introduzca su correo electrónico."><br>
                     <label for="telefono">Teléfono:</label><input type="tel" name="telefono" id="telefono" placeholder="Introduzca su número de telefono."><br>
                     <label for="estadocivil">Estado Civil:</label>
-                        <input type="radio" name="estadocivil" id="estadocivil">Soltero
-                        <input type="radio" name="estadocivil" id="estadocivil">Casado
-                        <input type="radio" name="estadocivil" id="estadocivil">Divorciado <br>
+                        <input type="radio" name="estadocivil" id="estadocivil1" value="Soltero">Soltero
+                        <input type="radio" name="estadocivil" id="estadocivil2" value="Casado">Casado
+                        <input type="radio" name="estadocivil" id="estadocivil3" value="Divorciado">Divorciado <br>
                     <label for="disponibilidad">Disponibilidad:</label><br>
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Lunes 
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Martes
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Miércoles<br>
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Jueves
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Viernes<br>
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Sábado
-                        <input type="checkbox" name="disponibilidad" id="disponibilidad">Domingo <br>
+                        <input type="checkbox" name="disponibilidad[]" id="disponibilidad1" value="Lunes">Lunes 
+                        <input type="checkbox" name="disponibilidad[]" id="disponibilidad2" value="Martes">Martes
+                        <input type="checkbox" name="disponibilidad[]" id="disponibilidad3" value="Miércoles">Miércoles<br>
+                        <input type="checkbox" name="disponibilidad[]" id="disponibilidad4" value="Jueves">Jueves
+                        <input type="checkbox" name="disponibilidad[]" id="disponibilidad5" value="Viernes">Viernes<br>
+                        <input type="checkbox" name="disponibilidad[]" id="disponibilidad6" value="Sábado">Sábado
+                        <input type="checkbox" name="disponibilidad[]" id="disponibilidad7" value="Domingo">Domingo <br>
                     <label for="motivacion">Motivación para entrar: </label><br>
-                        <input type="checkbox" name="motivacion" id="motivacion">Participar en actividades <br>
-                        <input type="checkbox" name="motivacion" id="motivacion">Preparar actividades <br>
-                        <input type="checkbox" name="motivacion" id="motivacion">Acompañar a un menor <br>
-                        <input type="checkbox" name="motivacion" id="motivacion">Curiosidad por la asociación <br>
-                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacion" id="motivacion2"> <br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion1" value="Participar en actividades">Participar en actividades <br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion2" value="Preparar actividades">Preparar actividades <br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion3" value="Acompañar a un menor">Acompañar a un menor <br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion4" value="Curiosidad por la asociación">Curiosidad por la asociación <br>
+                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacionOtro" id="motivacionOtro"> <br>
                     <label for="textarea">Observaciones: </label><br>
                         <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea><br>
                         <input type="checkbox" name="privacidad" id="privacidad" onclick="confirmPrivacidad()"> Política de privacidad y aviso legal. <br>
                         <input type="checkbox" name="noticias" id="noticias"> Deseo recibir noticias y informes de esta página. <br>
-                        <input type="submit" value="Enviar" onclick="createDocument()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
+                        <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp; <input type="button" value="Crear Documento" onclick="createDocument()"> &nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
                 </form>
                 <script src="./codigo/registro.js"></script>
             </div>

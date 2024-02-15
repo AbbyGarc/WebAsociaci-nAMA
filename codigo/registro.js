@@ -12,7 +12,8 @@ var observaciones = document.getElementById("observaciones").value;
 var privacidad = document.getElementById("privacidad").value;
 var noticias = document.getElementById("noticias").value;
 function createDocument(){
-    document.write("Se han registrado los siguientes datos: <br>" +
+    document.write(
+    "Se han registrado los siguientes datos: <br>" +
     "Su nombre es: " + nombre + " <br>" +
     "Sus apellidos son: " + apellido1 + " " + apellido2 + "<br>" +
     "Su DNI es: " + dni + "<br>" +
@@ -21,7 +22,8 @@ function createDocument(){
     "Su estado civil es: " + estadocivil + "<br>" +
     "Está disponible los días: " + disponibilidad + "<br>" +
     "Su motivación por entrar ha sido: " + motivacion + motivacion2 + "<br>" +
-    "Sus observaciones sobre nuestra página son: " + observaciones)
+    "Sus observaciones sobre nuestra página son: " + observaciones
+    )
 }
 
 console.log(nombre + primerapellido);
