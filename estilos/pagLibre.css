@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+.separado{
+    margin: 8px;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    margin: 1% 24%;
+    width: 50%;
+
+}
+table tr td{
+    border-style: solid;
+    border-color: rgb(212, 175, 55);
+    border-radius: 15%;
+    border-collapse: collapse;
+    background-color: rgb(212, 175, 55);
+}
+table{
+    background-color: rgb(212, 175, 55);
+}
+div.videazos{
+    margin: 1% 24%;
+    margin: auto;
+    padding: 0%;
+    background-color: rgb(212, 175, 55);
+    top: 45%;
+    right: 50%;
+    width: 50%;
+
+}
+div.videazo{
+    margin: 1% 24%;
+    width: 50%;
+}
+div.textaco{
+    margin: 1% 24%;
+    width: 50%;
+}
+main{
+    text-align: center;
+
+}
+h2{
+    color: rgb(255, 191, 0);
+    text-align: center;
+    font-family: 'UnifrakturMaguntia', cursive;
+    background-color: black;
+}
+
