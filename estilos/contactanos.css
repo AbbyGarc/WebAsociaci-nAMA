@@ -22,14 +22,32 @@ div.admin {
     height: 60%;
     margin-right: 2%;
 }
+div.admin th {
+    width: 20%;
+}
 img.mihaku {
-    width: 98%;
-    height: 98%;
-    border: 5px solid rgb(160, 0, 0);
+    margin: 1%;
+    width: 96%;
+    border: 5px solid rgb(200, 155, 15);
+    box-shadow: 5px 5px 8px rgb(175, 175, 175);
+    border-radius: 100%;
+}
+img.abby {
+    margin: 1%;
+    width: 96%;
+    border: 5px solid rgb(200, 155, 15);
+    box-shadow: 5px 5px 8px rgb(175, 175, 175);
+    border-radius: 100%;
+}
+img.rumano {
+    margin: 1%;
+    width: 96%;
+    border: 5px solid rgb(200, 155, 15);
+    box-shadow: 5px 5px 8px rgb(175, 175, 175);
     border-radius: 100%;
 }
 table.admin tr td {
-    padding: 1%;
+    padding: 1% 1% 1% 3%;
 }
 h2.contacto {
     width: 100%;
@@ -94,4 +112,18 @@ button:hover:not(.active) {
 #rank {
     width: 35%;
     margin: auto;
+}
+table.admin a {
+    text-decoration: none;
+    color: rgb(135, 110, 35);
+}
+table.admin a:hover:not(.active) {
+    text-shadow: 2px 2px 5px rgb(212, 175, 55);
+}
+img.sliver {
+    margin: 1%;
+    margin-top: 3%;
+    width: 32%;
+    float: left;
+    display: inline;
 }
