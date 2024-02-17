@@ -9,7 +9,10 @@
     <title>Comunidad Commander</title>
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
     <link rel="stylesheet" href="./estilos/registro.css">
-    <script src="./codigo/controlcvJS.js"></script> 
+    <link rel="stylesheet" href="./estilos/menu.css">
+    <link class="menu" rel="stylesheet" href="./estilos/controlcvCSS.css">
+    <script src="./codigo/menu.js"></script>
+    <script src="./codigo/controlcvJS.js"></script>   
     <link rel="shortcut icon" href="https://cdn-cardmavin.mavin.io/wp-content/uploads/2018/07/lorwyn-set-symbol-magic-the-gathering.png">
 </head>
 <body>
@@ -22,10 +25,38 @@
                 Comunidad Commander
             </h1>
         </div>
-        <div class="menu">
-            <img src="https://64.media.tumblr.com/d6086cd81797c758c8ec2938f5d04d57/tumblr_nbn8yujFiZ1qc29lyo2_1280.png" alt="icono">
+        <h2>
+            Menu
+        </h2>
+        <div class="menu" onclick="cambioMenu()">
+            <img src="./recursos/img/menu.png" alt="icono">
         </div>
     </header>
+    <nav class="menu">
+        <div class="menu" onclick="cambioMenu()">
+                <img src="./recursos/img/menu.png" alt="icono">
+        </div>
+        <ul>
+            <li>
+                <a href=".">Menu</a>
+            </li>
+            <li class="red">
+                <a class="red" href="Index.html">Inicio</a>
+            </li>
+            <li class="blue">
+                <a class="blue" href="pagLibre.html">¿Que es comander?</a>
+            </li>
+            <li class="green">
+                <a class="green" href="Sobre_nosotros.html">¿Quienes somos?</a>
+            </li>
+            <li class="black">
+                <a class="black" href="contactanos.html">Contactanos</a>
+            </li>
+            <li class="white">
+                <a class="white" href="registrate.html">Registrate</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <div class="fondoFormulario">
             <h1>Registro</h1>

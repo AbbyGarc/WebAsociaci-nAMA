@@ -15,6 +15,7 @@ main{
     background-size: contain;
     background-color: transparent;
     border: none;
+    box-shadow: none;
 }
 .fondoFormulario h1{
     position: relative;
@@ -29,6 +30,7 @@ main{
     border: 5px solid rgb(212, 175, 55);
     border-radius: 50px;
     text-shadow: 3px 3px rgb(212, 175, 55);
+   
 }
 #formulario {
     font-style: italic;
@@ -40,6 +42,7 @@ main{
     background-color: transparent;
     background-image: none;
     border: none;
+    box-shadow: none;
 }
 input {
     font-style: italic;
