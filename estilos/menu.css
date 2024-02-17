@@ -1,0 +1,18 @@
+nav {
+    z-index: 10;
+    position: fixed;
+    background-color: rgb(20, 20, 20);
+    float: right;
+    right: 0px;
+    width: 30%;
+    height: 100%;
+    border-left: solid rgb(212, 175, 55) 10px ;
+    box-shadow: 5px -10px 18px 10px rgb(212, 175, 55);
+}
+div.black {
+    z-index: 9;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(80, 80, 80, 0.40);
+}
