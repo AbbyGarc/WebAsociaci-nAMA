@@ -1,8 +1,13 @@
 header{
-    position: absolute;
+    position: fixed;
 }
 main{
     background:beige;
+}
+p {
+    margin: 0%;
+    padding: 0%;
+    font-size: larger;
 }
 .fondoFormulario {
     position: relative;

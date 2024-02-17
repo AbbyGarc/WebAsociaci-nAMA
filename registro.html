@@ -9,7 +9,6 @@
     <title>Comunidad Commander</title>
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
     <link rel="stylesheet" href="./estilos/registro.css">
-    <link rel="stylesheet" href="./estilos/menu.css">
     <link class="menu" rel="stylesheet" href="./estilos/controlcvCSS.css">
     <script src="./codigo/menu.js"></script>
     <script src="./codigo/controlcvJS.js"></script>   
@@ -73,26 +72,25 @@
                         <input type="radio" name="estadocivil" id="estadocivil2" value="Casado">Casado
                         <input type="radio" name="estadocivil" id="estadocivil3" value="Divorciado">Divorciado <br>
                     <label for="disponibilidad">Disponibilidad:</label><br>
-                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Lunes">Lunes 
-                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Martes">Martes
-                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Miércoles">Miércoles<br>
-                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Jueves">Jueves
-                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Viernes">Viernes<br>
-                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Sábado">Sábado
-                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Domingo">Domingo <br>
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad" id="disponibilidad" value="Lunes">Lunes 
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad" id="disponibilidad" value="Martes">Martes
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad" id="disponibilidad" value="Miércoles">Miércoles<br>
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad" id="disponibilidad" value="Jueves">Jueves
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad" id="disponibilidad" value="Viernes">Viernes<br>
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad" id="disponibilidad" value="Sábado">Sábado
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad" id="disponibilidad" value="Domingo">Domingo <br>
                     <label for="motivacion">Motivación para entrar: </label><br>
-                        <input type="checkbox" name="motivacion[]" id="motivacion1" value="Participar en actividades">Participar en actividades <br>
-                        <input type="checkbox" name="motivacion[]" id="motivacion2" value="Preparar actividades">Preparar actividades <br>
-                        <input type="checkbox" name="motivacion[]" id="motivacion3" value="Acompañar a un menor">Acompañar a un menor <br>
-                        <input type="checkbox" name="motivacion[]" id="motivacion4" value="Curiosidad por la asociación">Curiosidad por la asociación <br>
-                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacionOtro" id="motivacionOtro"> <br>
+                        <input type="checkbox" name="motivacion" id="motivacion" value="Participar">Participar en actividades <br>
+                        <input type="checkbox" name="motivacion" id="motivacion" value="Preparar">Preparar actividades <br>
+                        <input type="checkbox" name="motivacion" id="motivacion" value="Acompañar">Acompañar a un menor <br>
+                        <input type="checkbox" name="motivacion" id="motivacion" value="Curiosidad">Curiosidad por la asociación <br>
+                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacion2" id="motivacion2"> <br>
                     <label for="textarea">Observaciones: </label><br>
-                        <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea><br>
+                        <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea><br>
                         <input type="checkbox" name="privacidad" id="privacidad" onclick="confirmPrivacidad()"> Política de privacidad y aviso legal. <br>
                         <input type="checkbox" name="noticias" id="noticias"> Deseo recibir noticias y informes de esta página. <br>
                         <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp; <input type="button" value="Crear Documento" onclick="createDocument()"> &nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
                 </form>
-                <script src="./codigo/registro.js"></script>
             </div>
         </div>
     </main>
@@ -113,4 +111,5 @@
         </div>
     </footer>
 </body>
+<script src="./codigo/registro.js"></script>
 </html>
