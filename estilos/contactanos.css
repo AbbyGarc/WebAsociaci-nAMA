@@ -1,12 +1,13 @@
 div.direccion {
     width: 60%;
     height: 60%;
-    margin-right: 3%;
+    margin-right: 2%;
 }
 div.text {
     margin: 5px;
     border: none;
     background: none;
+    box-shadow: none;
 }
 div.direccion img {
     width: 32%;
@@ -19,7 +20,34 @@ div.admin {
     margin: 1% 3% 0px auto ;
     width: 60%;
     height: 60%;
-    margin-right: 3%;
+    margin-right: 2%;
+}
+div.admin th {
+    width: 20%;
+}
+img.mihaku {
+    margin: 1%;
+    width: 96%;
+    border: 5px solid rgb(200, 155, 15);
+    box-shadow: 5px 5px 8px rgb(175, 175, 175);
+    border-radius: 100%;
+}
+img.abby {
+    margin: 1%;
+    width: 96%;
+    border: 5px solid rgb(200, 155, 15);
+    box-shadow: 5px 5px 8px rgb(175, 175, 175);
+    border-radius: 100%;
+}
+img.rumano {
+    margin: 1%;
+    width: 96%;
+    border: 5px solid rgb(200, 155, 15);
+    box-shadow: 5px 5px 8px rgb(175, 175, 175);
+    border-radius: 100%;
+}
+table.admin tr td {
+    padding: 1% 1% 1% 3%;
 }
 h2.contacto {
     width: 100%;
@@ -38,6 +66,7 @@ fieldset {
     border-radius: 10px;
     background-color:rgb(255, 255, 255);
     color: black;
+    box-shadow: 5px 5px 18px rgb(100, 100, 100);
 }
 legend {
     padding: 0;
@@ -83,4 +112,18 @@ button:hover:not(.active) {
 #rank {
     width: 35%;
     margin: auto;
+}
+table.admin a {
+    text-decoration: none;
+    color: rgb(135, 110, 35);
+}
+table.admin a:hover:not(.active) {
+    text-shadow: 2px 2px 5px rgb(212, 175, 55);
+}
+img.sliver {
+    margin: 1%;
+    margin-top: 3%;
+    width: 32%;
+    float: left;
+    display: inline;
 }
