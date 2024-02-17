@@ -1,3 +1,4 @@
+    var formulario = document.getElementById("formulario");
     var nombre = document.getElementById("nombre").value;
     var apellido1 = document.getElementById('apellido1').value;
     var apellido2 = document.getElementById('apellido2').value;
@@ -5,29 +6,41 @@
     var correo = document.getElementById("correo").value;
     var telefono = document.getElementById("telefono").value;
     var estadocivil = document.querySelector('input[name="estadocivil"]:checked').value;
-    var disponibilidad = document.querySelectorAll("disponibilidad").checked;
-    var motivacion = document.getElementsById("motivacion").checked;
+    var disponibilidad = document.getElementsByName('disponibilidad');
+    var disponibilidadText = "";
+    for (var i = 0; i < disponibilidad.length; i++) {
+        if(disponibilidad[i].checked) {
+            disponibilidadText += disponibilidad[i].value + ", ";
+          } 
+        }
+    var motivacion = document.getElementsByName("motivacion");
+    var motivacionText = "";
+    for (var i = 0; i < motivacion.length; i++) {
+        if(motivacion[i].checked) {
+            motivacionText += motivacion[i].value + ", ";
+          } 
+        }
     var motivacion2 = document.getElementById("motivacion2").value;
     var observaciones = document.getElementById("observaciones").value;
-    var privacidad = document.getElementById("privacidad").value;
-    var noticias = document.getElementById("noticias").value;
+
 function createDocument(){
-    document.write("Se han registrado los siguientes datos: <br>");
-    document.write("Su nombre es: " + nombre + " <br>");
-    document.write("Sus apellidos son: " + apellido1 + " " + apellido2 + "<br>");
-    document.write("Su DNI es: " + dni + "<br>");
-    document.write("Su correo electrónico es: " + correo + "<br>");
-    document.write("Su teléfono es: " + telefono + "<br>");
-    document.write("Su estado civil es: " + estadocivil + "<br>");
-    for (let i = 0; i < disponibilidad.length; i++) {
-        document.write(disponibilidad[i].value);
-      }
-    document.write("Está disponible los días: " + disponibilidad.value);
-    document.write("Su motivación por entrar ha sido: " + motivacion.value + motivacion2 + "<br>");
-    document.write("Sus observaciones sobre nuestra página son: " + observaciones);
+        formulario.innerHTML = "";
+        formulario.innerHTML += "<h3>Se han registrado los siguientes datos: </h3><br>";
+        formulario.innerHTML += "<p>Su nombre es:" + nombre  + "<p><br>";
+        formulario.innerHTML += "<p>Sus apellidos son:" + apellido1 + apellido2 + "</p><br>";
+        formulario.innerHTML += "<p>Su DNI es: " + dni + "</p><br>";
+        formulario.innerHTML += "<p>Su correo electrónico es: " + correo + "</p><br>";
+        formulario.innerHTML += "<p>Su teléfono es: " + telefono + "</p><br>";
+        if (!estadocivil) {
+            formulario.innerHTML += "<p>No ha marcado una opción de estado civil.</p><br>";
+        } else {
+            formulario.innerHTML += "<p>Su estado civil es: " + estadocivil + "</p><br>";
+        }
+        formulario.innerHTML += "<p>Esta disponible los dias: " + disponibilidadText + "</p><br>";
+        formulario.innerHTML += "<p>Su motivación por entrar ha sido: " + motivacionText + "</p><br>";
+        formulario.innerHTML += "<p>Sus observaciones sobre nuestra página son: " + observaciones + "</p>";
 }
 
-console.log(nombre + primerapellido);
 function confirmPrivacidad (){
     var checkbox = document.getElementById('privacidad');
     checkbox.addEventListener( 'change', function() {
