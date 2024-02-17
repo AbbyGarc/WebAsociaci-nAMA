@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Miguel Suárez, Abby Garcia, Andrei Achim">
+    <meta name="keywords" content="Commander, Magic, Mtg, Magic Arena, Cartas, Torneo, Torneos, IES Villablanca">
+    <meta name="description" content="Somos una comunidad dedicada a jugar magic the gathering, en concreto el formato de commander en nuestro instituto IES Villablanca">
+    <title>Comunidad Commander</title>
+    <link rel="stylesheet" href="./estilos/controlcvCSS.css">
+    <link rel="stylesheet" href="./estilos/registro.css">
+    <link rel="stylesheet" href="./estilos/menu.css">
+    <link class="menu" rel="stylesheet" href="./estilos/controlcvCSS.css">
+    <script src="./codigo/menu.js"></script>
+    <script src="./codigo/controlcvJS.js"></script>   
+    <link rel="shortcut icon" href="https://cdn-cardmavin.mavin.io/wp-content/uploads/2018/07/lorwyn-set-symbol-magic-the-gathering.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="icono">
+        </div>
+        <div class="titulo">
+            <h1>
+                Comunidad Commander
+            </h1>
+        </div>
+        <h2>
+            Menu
+        </h2>
+        <div class="menu" onclick="cambioMenu()">
+            <img src="./recursos/img/menu.png" alt="icono">
+        </div>
+    </header>
+    <nav class="menu">
+        <div class="menu" onclick="cambioMenu()">
+                <img src="./recursos/img/menu.png" alt="icono">
+        </div>
+        <ul>
+            <li>
+                <a href=".">Menu</a>
+            </li>
+            <li class="red">
+                <a class="red" href="Index.html">Inicio</a>
+            </li>
+            <li class="blue">
+                <a class="blue" href="pagLibre.html">¿Que es comander?</a>
+            </li>
+            <li class="green">
+                <a class="green" href="Sobre_nosotros.html">¿Quienes somos?</a>
+            </li>
+            <li class="black">
+                <a class="black" href="contactanos.html">Contactanos</a>
+            </li>
+            <li class="white">
+                <a class="white" href="registrate.html">Registrate</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="fondoFormulario">
+            <h1>Registro</h1>
+            <div id="formulario">
+                <form action="mailto:admin@asociacion.org" method="post" id="myform">
+                    <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" required placeholder="Introduzca su nombre."><br>
+                    <label for="apellido1">Primer Apellido:</label><input type="text" id="apellido1" name="primerapellido" required placeholder="Introduzca su primer apellido."><br>
+                    <label for="apellido2">Segundo Apellido:</label><input type="text" id="apellido2" name="segundoapellido" placeholder="Introduzca su segundo apellido."><br>
+                    <label for="DNI">Documento Identidad:</label><input type="text" id="dni" name="dni" required placeholder="Introduzca su DNI o documento de identidad."><br>         
+                    <label for="correo">Correo electrónico:</label><input type="email" name="correo" id="correo" required placeholder="Introduzca su correo electrónico."><br>
+                    <label for="telefono">Teléfono:</label><input type="tel" name="telefono" id="telefono" placeholder="Introduzca su número de telefono."><br>
+                    <label for="estadocivil">Estado Civil:</label>
+                        <input type="radio" name="estadocivil" id="estadocivil1" value="Soltero">Soltero
+                        <input type="radio" name="estadocivil" id="estadocivil2" value="Casado">Casado
+                        <input type="radio" name="estadocivil" id="estadocivil3" value="Divorciado">Divorciado <br>
+                    <label for="disponibilidad">Disponibilidad:</label><br>
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Lunes">Lunes 
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Martes">Martes
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Miércoles">Miércoles<br>
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Jueves">Jueves
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Viernes">Viernes<br>
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Sábado">Sábado
+                        <input class="disponibilidad" type="checkbox" name="disponibilidad[]" id="disponibilidad" value="Domingo">Domingo <br>
+                    <label for="motivacion">Motivación para entrar: </label><br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion1" value="Participar en actividades">Participar en actividades <br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion2" value="Preparar actividades">Preparar actividades <br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion3" value="Acompañar a un menor">Acompañar a un menor <br>
+                        <input type="checkbox" name="motivacion[]" id="motivacion4" value="Curiosidad por la asociación">Curiosidad por la asociación <br>
+                    <label for="motivacionOtro">Otro: </label><input type="text" name="motivacionOtro" id="motivacionOtro"> <br>
+                    <label for="textarea">Observaciones: </label><br>
+                        <textarea name="observacion" id="observacion" cols="30" rows="10"></textarea><br>
+                        <input type="checkbox" name="privacidad" id="privacidad" onclick="confirmPrivacidad()"> Política de privacidad y aviso legal. <br>
+                        <input type="checkbox" name="noticias" id="noticias"> Deseo recibir noticias y informes de esta página. <br>
+                        <input type="submit" value="Enviar">&nbsp;&nbsp;&nbsp; <input type="button" value="Crear Documento" onclick="createDocument()"> &nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
+                </form>
+                <script src="./codigo/registro.js"></script>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            Miguel.SS: <a href="">miguel.suarezsanz@educa.madrid.org</a><br>
+            Abbygail.G.GC: <a href="">maggc5@educa.madrid.org</a><br>
+            Andre.A: <a href="">andrei.achim@educa.madrid.org</a><br>
+        </div>
+        <div class="link">
+            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/"><img src="https://site.educa.madrid.org/ies.villablanca.madrid//wp-content/uploads/ies.villablanca.madrid/2020/06/cropped-cropped-IES-Villablanca-horizontal-color-2.png" alt="Imagen con el logo del instituto I.E.S. Villablanca"></a>
+        </div>
+        <div class="copyleft">
+            <a href="https://es.wikipedia.org/wiki/Copyleft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/220px-Copyleft.svg.png" alt="Símbolo de Copyleft"></a>
+        </div>
+        <div class="copyleftText">
+            <p>El contenido de esta página esta protegido por copyleft</p>
+        </div>
+    </footer>
+</body>
+</html>
