@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
     <link rel="stylesheet" href="./estilos/contactanos.css">
     <link class="menu" rel="stylesheet" href="./estilos/controlcvCSS.css">
+    <link class="mode" rel="stylesheet" href="">
     <script src="./codigo/menu.js"></script>
+    <script src="./codigo/contacto.js"></script>
     <link rel="shortcut icon" href="./recursos/img/favico.png">
 </head>
 <body>
-    <div class="black"></div>
     <header>
         <div class="logo">
             <img src="" alt="icono">
@@ -32,13 +33,14 @@
             <img src="./recursos/img/menu.png" alt="icono">
         </div>
     </header>
+    <div class="black" onclick="cambioMenu()"></div>
     <nav class="menu">
         <div class="menu" onclick="cambioMenu()">
                 <img src="./recursos/img/menu.png" alt="icono">
         </div>
         <ul>
             <li>
-                <a href=".">Menu</a>
+                <h1>Menu</h1>
             </li>
             <li class="red">
                 <a class="red" href="Index.html">Inicio</a>
@@ -55,27 +57,39 @@
             <li class="white">
                 <a class="white" href="registrate.html">Registrate</a>
             </li>
+            <li class="darkMode">
+                <label for="switch" class="non">
+                    <p>Modo Oscuro</p>
+                </label>
+            </li>
+            <li class="darkMode">
+                <label for="switch" class="non">
+                    <div>
+                        <input type="checkbox" id="switch" class="Bswitch">
+                        <label for="switch" class="switch"></label>
+                    </div>
+                </label>
+            </li>
         </ul>
     </nav>
     <main>
             <div class="direccion">
                 <div class="text">
                 <h2>¡Puedes encontrarnos aqui!</h2>
-                <p>Prueba container PlaceHolder<br>
-                We're no strangers to love <br>
-                You know the rules and so do I <br>
-                A full commitment's what I'm thinking of <br>
-                You wouldn't get this from any other guy <br>
-                <br>
-                I just wanna tell you how I'm feeling <br>
-                Gotta make you understand <br>
-                <br>
-                Never gonna give you up <br>
-                Never gonna let you down <br>
-                Never gonna turn around and desert you <br>
-                Never gonna make you cry <br>
-                Never gonna say goodbye <br>
-                Never gonna tell a lie and hurt you</p>
+                <p>El Instituto de Educación Secundaria <br>
+                    (IES) Villablanca es un centro educativo <br>
+                    reconocido por su compromiso con la <br>
+                    excelencia académica y el desarrollo <br>
+                    integral de sus estudiantes. <br><br>
+                    Con una destacada oferta educativa <br>
+                    y un equipo docente altamente cualificado, <br>
+                    el IES Villablanca ofrece un ambiente de <br>
+                    aprendizaje inclusivo y enriquecedor. <br><br>
+                    Con una sólida reputación en la comunidad, <br>
+                    el IES Villablanca es un lugar donde <br>
+                    los jóvenes pueden prosperar, <br>
+                    explorar sus intereses y alcanzar <br>
+                    su máximo potencial.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.099253612516!2d-3.6024705234525354!3d40.4066519562518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42255d3a247575%3A0xd8a0a40edf810cff!2sIES%20Villablanca!5e0!3m2!1ses!2ses!4v1707502339422!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <img src="./recursos/img/iesvillablanca1.jpg" alt="vb1 no encontrado">
@@ -105,7 +119,7 @@
                     </th>
                     <td>
                         <p>Abby <br>
-                            Juez del torneo: Siy la encargada en que se cumplan las normas en las partidas a parte de resolver conflictos y mantener el orden de juego.</p>
+                            Juez del torneo: Soy la encargada en que se cumplan las normas en las partidas a parte de resolver conflictos y mantener el orden de juego.</p>
                     </td>
                 </tr>
                 <tr>
@@ -125,7 +139,7 @@
                 <legend>
                     <h2>Envianos un comentario</h2>
                 </legend>
-                <table>
+                <table class="form">
                     <tr>
                         <td><label for="nombre">Nombre: </label></td>
                         <td colspan="2"><input type="text" id="nombre" name="Nombre" placeholder="Usuario" class="txt">
@@ -141,32 +155,30 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3"><label for="user">Valora nuestra web: </label></td>
+                        <td colspan="3">Valora nuestra web:</td>
                     </tr>
                     <tr>
-                        <td><label for="rad1">1.Sobresaliente</label></td>
-                        <td><input type="radio" name="rad" id="rad1"></td>
+                        <td><label for="rad1" onclick="RankS()">1.Sobresaliente</label></td>
+                        <td><input type="radio" name="rad" id="rad1" onclick="RankS()"></td>
                         <td rowspan="5" class="center">
-                            <img id="rank"
-                                src="./recursos/img/RankS.png"
-                                alt="S">
+                            <h1 id="rank">U</h1>
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="rad2">2.Alucinante</label></td>
-                        <td><input type="radio" name="rad" id="rad2"></td>
+                        <td><label for="rad2" onclick="RankA()">2.Alucinante</label></td>
+                        <td><input type="radio" name="rad" id="rad2" onclick="RankA()"></td>
                     </tr>
                     <tr>
-                        <td><label for="rad3">3.Bien</label></td>
-                        <td><input type="radio" name="rad" id="rad3"></td>
+                        <td><label for="rad3" onclick="RankB()">3.Bien</label></td>
+                        <td><input type="radio" name="rad" id="rad3" onclick="RankB()"></td>
                     </tr>
                     <tr>
-                        <td><label for="rad4">4.Carente</label></td>
-                        <td><input type="radio" name="rad" id="rad4"></td>
+                        <td><label for="rad4" onclick="RankC()">4.Carente</label></td>
+                        <td><input type="radio" name="rad" id="rad4" onclick="RankC()"></td>
                     </tr>
                     <tr>
-                        <td><label for="rad5">5.Decepcionante</label></td>
-                        <td><input type="radio" name="rad" id="rad5"></td>
+                        <td><label for="rad5" onclick="RankD()">5.Decepcionante</label></td>
+                        <td><input type="radio" name="rad" id="rad5" onclick="RankD()"></td>
                     </tr>
                     <tr>
                         <td>
@@ -175,7 +187,7 @@
                     </tr>
                     <tr>
                         <td colspan="3" class="center">
-                            <label for="texrarea">Comentarios:</label>
+                            Comentarios:
                         </td>
                     </tr>
                     <tr>
@@ -191,29 +203,26 @@
                     <tr>
                         <td colspan="3" class="center">
                             <button type="submit">Enviar</button>
-                            <button type="reset">Borrar</button>
+                            <button type="reset" onclick="hakai()">Borrar</button>
                         </td>
                     </tr>
                 </table>
             </fieldset>
         </form>
-        <img class="sliver" src="./recursos/img/silverino.jpg" alt="sliver goes brrr">
+        <img class="sliver" src="./recursos/img/firstsliver.png" alt="sliver goes brrr">
     </main>
     <footer>
         <div class="contact">
-            Miguel.SS: <a href="">miguel.suarezsanz@educa.madrid.org</a><br>
-            Abbygail.G.GC: <a href="">maggc5@educa.madrid.org</a><br>
-            Andre.A: <a href="">andrei.achim@educa.madrid.org</a><br>
+            Miguel.SS: <a href="mailto:miguel.suarezsanz@educa.madrid.org">miguel.suarezsanz@educa.madrid.org</a><br>
+            Abbygail.G.GC: <a href="mailto:maggc5@educa.madrid.org">maggc5@educa.madrid.org</a><br>
+            Andre.A: <a href="mailto:andrei.achim@educa.madrid.org">andrei.achim@educa.madrid.org</a><br>
         </div>
         <div class="link">
-            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/"><img
-                    src="./recursos/img/logoVB.png"
+            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank"><img src="./recursos/img/logoVB.png"
                     alt=""></a>
         </div>
         <div class="copyleft">
-            <a href="https://es.wikipedia.org/wiki/Copyleft"><img
-                    src="./recursos/img/Copyleft.png"
-                    alt=""></a>
+            <a href="https://es.wikipedia.org/wiki/Copyleft" target="_blank"><img src="./recursos/img/Copyleft.png" alt=""></a>
         </div>
         <div class="copyleftText">
             <p>El contenido de esta página esta protegido por copyleft</p>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 div.direccion {
     width: 60%;
     height: 60%;
@@ -56,12 +57,15 @@ h2.contacto {
 table {
     width: fit-content;
 }
+table.form {
+    width: 99%;
+}
 tr {
     width: fit-content;
 }
 fieldset {
     padding: 1%;
-    width: fit-content;
+    width: 30%;
     border: 5px solid rgb(212, 175, 55);
     border-radius: 10px;
     background-color:rgb(255, 255, 255);
@@ -102,16 +106,23 @@ button {
     border: solid 3px rgb(135, 110, 35);
     background-color: rgb(212, 175, 55);
     color: white;
+    transition: ease-out 0.4s;
 }
 button:hover:not(.active) {
     border-radius: 20px;
     border: solid 3px rgb(212, 175, 55);
-    background-color: rgb(135, 110, 35);
     color: white;
+    box-shadow: inset 0 0 0 50px rgb(135, 110, 35);
 }
 #rank {
-    width: 35%;
+    text-align: center;
+    font-style: normal;
+    font-size: 1200%;
     margin: auto;
+    color: rgba(0, 0, 0, 0);
+    font-family: "Pirata One", system-ui;
+    background-size: cover; 
+    background-position: center; 
 }
 table.admin a {
     text-decoration: none;
