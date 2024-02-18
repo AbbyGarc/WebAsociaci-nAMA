@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
     <link rel="stylesheet" href="./estilos/registro.css">
     <link class="menu" rel="stylesheet" href="./estilos/controlcvCSS.css">
+    <link class="mode" rel="stylesheet" href="">
     <script src="./codigo/menu.js"></script>
     <script src="./codigo/controlcvJS.js"></script>   
     <link rel="shortcut icon" href="https://cdn-cardmavin.mavin.io/wp-content/uploads/2018/07/lorwyn-set-symbol-magic-the-gathering.png">
@@ -56,6 +57,45 @@
             </li>
         </ul>
     </nav>
+    <div class="black" onclick="cambioMenu()"></div>
+    <nav class="menu">
+        <div class="menu" onclick="cambioMenu()">
+                <img src="./recursos/img/menu.png" alt="icono">
+        </div>
+        <ul>
+            <li>
+                <h1>Menu</h1>
+            </li>
+            <li class="red">
+                <a class="red" href="Index.html">Inicio</a>
+            </li>
+            <li class="blue">
+                <a class="blue" href="pagLibre.html">¿Que es comander?</a>
+            </li>
+            <li class="green">
+                <a class="green" href="Sobre_nosotros.html">¿Quienes somos?</a>
+            </li>
+            <li class="black">
+                <a class="black" href="contactanos.html">Contactanos</a>
+            </li>
+            <li class="white">
+                <a class="white" href="registro.html">Registrate</a>
+            </li>
+            <li class="darkMode">
+                <label for="switch" class="non">
+                    <p>Modo Oscuro</p>
+                </label>
+            </li>
+            <li class="darkMode">
+                <label for="switch" class="non">
+                    <div>
+                        <input type="checkbox" id="switch" class="Bswitch">
+                        <label for="switch" class="switch"></label>
+                    </div>
+                </label>
+            </li>
+        </ul>
+    </nav>
     <main>
         <div class="fondoFormulario">
             <h1>Registro</h1>
@@ -96,15 +136,16 @@
     </main>
     <footer>
         <div class="contact">
-            Miguel.SS: <a href="">miguel.suarezsanz@educa.madrid.org</a><br>
-            Abbygail.G.GC: <a href="">maggc5@educa.madrid.org</a><br>
-            Andre.A: <a href="">andrei.achim@educa.madrid.org</a><br>
+            Miguel.SS: <a href="mailto:miguel.suarezsanz@educa.madrid.org">miguel.suarezsanz@educa.madrid.org</a><br>
+            Abbygail.G.GC: <a href="mailto:maggc5@educa.madrid.org">maggc5@educa.madrid.org</a><br>
+            Andre.A: <a href="mailto:andrei.achim@educa.madrid.org">andrei.achim@educa.madrid.org</a><br>
         </div>
         <div class="link">
-            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/"><img src="https://site.educa.madrid.org/ies.villablanca.madrid//wp-content/uploads/ies.villablanca.madrid/2020/06/cropped-cropped-IES-Villablanca-horizontal-color-2.png" alt="Imagen con el logo del instituto I.E.S. Villablanca"></a>
+            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank"><img src="./recursos/img/logoVB.png"
+                    alt=""></a>
         </div>
         <div class="copyleft">
-            <a href="https://es.wikipedia.org/wiki/Copyleft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/220px-Copyleft.svg.png" alt="Símbolo de Copyleft"></a>
+            <a href="https://es.wikipedia.org/wiki/Copyleft" target="_blank"><img src="./recursos/img/Copyleft.png" alt=""></a>
         </div>
         <div class="copyleftText">
             <p>El contenido de esta página esta protegido por copyleft</p>
