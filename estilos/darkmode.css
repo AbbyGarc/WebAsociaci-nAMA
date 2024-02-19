@@ -1,0 +1,51 @@
+main {
+    background-color: rgb(20, 20, 20);
+}
+div.copyleft a{
+    height: 0px;    
+}
+div.copyleft img {
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    transition: ease-out 0.4s;
+}
+main div {
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 20);
+    box-shadow: 5px 5px 18px rgb(65, 65, 65);
+}
+nav div {
+    background: rgb(80, 80, 80);
+}
+div.contact a:hover:not(.active) {
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+}
+fieldset h2 {
+    background-color:rgb(20, 20, 20);
+    color: white;
+}
+fieldset {
+    background-color:rgb(20, 20, 20);
+}
+td {
+    color: white;
+}
+div.fondoFormulario {
+    color: black;
+}
+aside.comentarios {
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+table.calendario {
+    color: black;
+}
+table.calendario tbody {
+    color: rgb(30, 132, 190);
+}
+#formulario {
+    color: black;
+}

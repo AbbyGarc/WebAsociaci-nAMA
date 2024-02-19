@@ -21,6 +21,7 @@ header{
     position: fixed;
     top: 0;
     box-shadow: 5px -10px 18px 10px rgb(212, 175, 55);
+    z-index: 5;
 }
 header h2 {
     position: fixed;
@@ -47,6 +48,7 @@ div.logo{
     border: rgba(0, 0, 0, 0) 5px solid;
     background-color: rgba(0, 0, 0, 0);
     padding: 2px;
+    transition: ease-out 0.4s;
 }
 div.logo img {
     width: 100%;
@@ -76,6 +78,7 @@ div.menu{
     background-color: rgba(0, 0, 0, 0);
     padding: 2px;
     margin-right: 7px;
+    transition: ease-out 0.4s;
 }
 div.menu img {
     padding: 5%;
@@ -116,6 +119,7 @@ div.contact a {
     color: rgb(75, 60, 0);
     padding: 0px 8px;
     text-decoration: none;
+    transition: ease-out 0.4s;
 }
 div.link {
     width: 12%;
@@ -128,6 +132,7 @@ div.link img {
     width: 100%;
     height: 100%;
     border: 5px solid rgba(255, 255, 255, 0);
+    transition: ease-out 0.4s;
 }
 div.copyleft {
     width: 3.4%;
@@ -146,6 +151,7 @@ div.copyleft img {
     width: 90%;
     height: 90%;
     border-radius: 100%;
+    transition: ease-out 0.4s;
 }
 main div {
     float: left;
@@ -170,7 +176,6 @@ div.contact a:hover:not(.active) {
     color: black;
     box-shadow: 2px 2px 5px rgb(212, 175, 55);
     border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(212, 175, 55);
 }
 div.copyleft img:hover:not(.active) {
     background-color: rgba(255, 255, 255);
@@ -218,9 +223,20 @@ nav li {
     font-size: larger;
     font-weight: bolder;
     width: 80%;
-    padding: 4% 1%;
+    padding: 2.5% 1%;
     text-align: center;
     margin: 0px 0px 5% 0px;
+    transition: ease-out 0.6s;
+    vertical-align: middle;
+}
+nav h1 {
+    color: white;
+    font-size: 300%;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: 3px 3px rgb(80, 80, 80);
+    margin: 0px;
 }
 nav a {
     color: white;
@@ -230,20 +246,65 @@ nav a {
     text-decoration: none;
     text-shadow: 3px 3px rgb(80, 80, 80);
 }
-a.red:hover:not(.active), li.red:hover:not(.active) {
-    background-color: red;
+li.red:hover:not(.active) {
+    box-shadow: inset 1000px 0 0 0 red;
 }
-a.blue:hover:not(.active), li.blue:hover:not(.active) {
-    background-color: blue;
+li.blue:hover:not(.active) {
+    box-shadow: inset 1000px 0 0 0 blue;
 }
-a.black:hover:not(.active), li.black:hover:not(.active) {
-    background-color: rgb(0, 0, 0);
+li.black:hover:not(.active) {
+    box-shadow: inset 1000px 0 0 0 black;
 }
-a.green:hover:not(.active), li.green:hover:not(.active) {
-    background-color: rgb(0, 179, 0);
+li.green:hover:not(.active) {
+    box-shadow: inset 1000px 0 0 0 rgb(0, 179, 0);
 }
-a.white:hover:not(.active), li.white:hover:not(.active) {
-    background-color: rgb(255, 255, 102);
+li.white:hover:not(.active) {
+    box-shadow: inset 1000px 0 0 0 rgb(255, 255, 102);
+}
+li.white a:hover:not(.active) {
     color: black;
+}
+li.darkMode {
+    padding: 0% 1%;
+}
+nav p {
+    display: inline-block;
+    margin: 0px 10px;
+    color: white;
+    font-size: 200%;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: 3px 3px rgb(80, 80, 80);
+}
+nav div {
+    display: inline block;
+    background: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 50px;
+    margin: auto;
+    transition: all 0.25s ease 0s;
+}
+label.switch {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.25s ease 0s;
+    margin-right: 50px;
+    margin-left: 0px;
+    background: rgb(135, 110, 35);
+}
+input.Bswitch {
+    display: none;
+}
+input.Bswitch:checked + label.switch {
+    margin-right: 00px;
+    margin-left: 50px;
+    background: rgb(212, 175, 55);
 }
 /*Generico*/

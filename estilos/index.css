@@ -42,6 +42,10 @@ td{
     border: 4px solid rgb(247, 187, 59);
     border-collapse: collapse;
     color: rgb(30, 132, 190);
+<<<<<<< HEAD
+=======
+    text-align: center;
+>>>>>>> principal
 }
 thead{
     border-collapse: collapse;
@@ -49,4 +53,11 @@ thead{
 }
 tfoot{
     text-align: center;
+<<<<<<< HEAD
+=======
+}
+td.torneito:hover:not(.active) {
+    background-color: rgb(20, 20, 20);
+    color: white;
+>>>>>>> principal
 }

@@ -10,13 +10,12 @@
     <title>Comunidad Commander</title>
     <link rel="stylesheet" href="./estilos/controlcvCSS.css">
     <link class="menu" rel="stylesheet" href="./estilos/controlcvCSS.css">
+    <link class="mode" rel="stylesheet" href="">
     <link rel="stylesheet" href="./estilos/index.css">
     <script src="./codigo/menu.js"></script>
     <link rel="shortcut icon" href="./recursos/img/favico.png">
 </head>
-
 <body>
-    <div class="black"></div>
     <header>
         <div class="logo">
             <a href="./Index.html"><img src="./recursos/img/logo.png" alt="icono"></a>
@@ -33,13 +32,14 @@
             <img src="./recursos/img/menu.png" alt="icono">
         </div>
     </header>
+    <div class="black" onclick="cambioMenu()"></div>
     <nav class="menu">
         <div class="menu" onclick="cambioMenu()">
                 <img src="./recursos/img/menu.png" alt="icono">
         </div>
         <ul>
             <li>
-                <a href=".">Menu</a>
+                <h1>Menu</h1>
             </li>
             <li class="red">
                 <a class="red" href="Index.html">Inicio</a>
@@ -55,6 +55,19 @@
             </li>
             <li class="white">
                 <a class="white" href="registro.html">Registrate</a>
+            </li>
+            <li class="darkMode">
+                <label for="switch" class="non">
+                    <p>Modo Oscuro</p>
+                </label>
+            </li>
+            <li class="darkMode">
+                <label for="switch" class="non">
+                    <div>
+                        <input type="checkbox" id="switch" class="Bswitch">
+                        <label for="switch" class="switch"></label>
+                    </div>
+                </label>
             </li>
         </ul>
     </nav>
@@ -75,7 +88,7 @@
             <p>Se organizan partidas ocasionalmente entre semana y los findes otras partidas de Magic con distintos formatos de juego.</p>
             <img class="imgtorneo" src="./recursos/img/imagenquedada3.jpg" alt="Imagen de un torneo de Magic">
             <img class="imgtorneo" src="./recursos/img/imagenquedada4.jpg" alt="Imagen de un torneo de Magic">
-            <table>
+            <table class="calendario">
                 <thead> 
                     <tr>
                         <th colspan="7">Mes de Julio</th>
@@ -123,7 +136,10 @@
                         <td>18</td>
                         <td>19</td>
                         <td>20</td>
-                        <td>21</td>
+                        <td class="torneito" onclick="torneito()">
+                            21<br>
+                            Torneo
+                        </td>
                         <td>22</td>
                         <td>23</td>
                     </tr>
@@ -148,16 +164,16 @@
     </main>
     <footer>
         <div class="contact">
-            Miguel.SS: <a href="">miguel.suarezsanz@educa.madrid.org</a><br>
-            Abbygail.G.GC: <a href="">maggc5@educa.madrid.org</a><br>
-            Andre.A: <a href="">andrei.achim@educa.madrid.org</a><br>
+            Miguel.SS: <a href="mailto:miguel.suarezsanz@educa.madrid.org">miguel.suarezsanz@educa.madrid.org</a><br>
+            Abbygail.G.GC: <a href="mailto:maggc5@educa.madrid.org">maggc5@educa.madrid.org</a><br>
+            Andre.A: <a href="mailto:andrei.achim@educa.madrid.org">andrei.achim@educa.madrid.org</a><br>
         </div>
         <div class="link">
-            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/"><img src="./recursos/img/logoVB.png"
+            <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank"><img src="./recursos/img/logoVB.png"
                     alt=""></a>
         </div>
         <div class="copyleft">
-            <a href="https://es.wikipedia.org/wiki/Copyleft"><img src="./recursos/img/Copyleft.png" alt=""></a>
+            <a href="https://es.wikipedia.org/wiki/Copyleft" target="_blank"><img src="./recursos/img/Copyleft.png" alt=""></a>
         </div>
         <div class="copyleftText">
             <p>El contenido de esta página esta protegido por copyleft</p>
