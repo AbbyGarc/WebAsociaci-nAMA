@@ -1,0 +1,52 @@
+.comentarios{
+    margin-right: 1%;
+    float: left;
+    height: 75vh;
+    width: 15%;
+    background-color: white;
+    border: 5px solid rgb(212, 175, 55);
+    border-radius: 50px;
+    font-size: large;
+    text-align: center;
+}
+.imgtorneo{
+   width: 15%;
+   height: 20%;
+   float: right;
+   background-color: white;
+   margin-right: 1%;
+    border: 5px solid rgb(212, 175, 55);
+    border-radius: 50px;
+    text-shadow: 3px 3px rgb(212, 175, 55);
+    font-size: large;
+    text-align: center;
+}
+
+.actividades{
+    width: 80%;
+    height: 50%;
+}
+.actividades p{  
+    width: 60%;
+    font-size: x-large;
+}
+
+table,tr,td{
+    border: 4px solid rgb(247, 187, 59);
+    border-collapse: collapse;
+    background-color: rgb(252, 232, 180);
+}
+td{
+    width: 70px;
+    height: 34px;
+    border: 4px solid rgb(247, 187, 59);
+    border-collapse: collapse;
+    color: rgb(30, 132, 190);
+}
+thead{
+    border-collapse: collapse;
+    text-align: center;
+}
+tfoot{
+    text-align: center;
+}
