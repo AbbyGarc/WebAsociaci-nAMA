@@ -23,3 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+function torneito() {
+    alert("Torneo Budget de Commander\n1. Un precio limite de 100 euros por deck. Aunque los decks preconstruidos son mas bataros y gozan de una popularidad enorme\n2. Unos cuantos decks para prestar para que la gente que no disponga de recursos pueda participar y divertirse.")
+}
