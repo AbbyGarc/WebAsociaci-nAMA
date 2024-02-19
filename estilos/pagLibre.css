@@ -19,7 +19,7 @@ table tr td{
 table{
     background-color: rgb(212, 175, 55);
 }
-div.videazos{
+.videazos{
     margin: 1% 24%;
     margin: auto;
     padding: 0%;
@@ -27,6 +27,7 @@ div.videazos{
     top: 45%;
     right: 50%;
     width: 50%;
+    border-radius: 15px;
 
 }
 div.videazo{
@@ -47,4 +48,37 @@ h2{
     font-family: 'UnifrakturMaguntia', cursive;
     background-color: black;
 }
+iframe{
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px rgb(207, 142, 0);
+}
 
+.Angel{
+    width: 450px;
+    height: 380px;
+    position: absolute;
+    top: 130px;
+    left: 0%;
+    
+}
+.Goblin{
+    width: 380px;
+    height: 350px;
+    position: absolute;
+    top: 130px;
+    right: 2%;
+}
+.nivMizzet{
+    width: 430px;
+    height: 350px;
+    position: absolute;
+    top: 88%;
+    left: 0%;
+}
+.Sliver{
+    width: 420px;
+    height: 350px;
+    position: absolute;
+    top:88%;
+    right: 2%;
+}
