@@ -21,6 +21,7 @@ header{
     position: fixed;
     top: 0;
     box-shadow: 5px -10px 18px 10px rgb(212, 175, 55);
+    z-index: 5;
 }
 header h2 {
     position: fixed;

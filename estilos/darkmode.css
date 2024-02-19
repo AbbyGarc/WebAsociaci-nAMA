@@ -36,3 +36,16 @@ td {
 div.fondoFormulario {
     color: black;
 }
+aside.comentarios {
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+table.calendario {
+    color: black;
+}
+table.calendario tbody {
+    color: rgb(30, 132, 190);
+}
+#formulario {
+    color: black;
+}
