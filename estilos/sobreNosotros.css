@@ -1,15 +1,23 @@
-main div {
-    margin: 5%;
-}
 
-.imagen{
-    display: flex;
-    width: 90%;
-    height: 100%;
+table{
+    width: 900px;
+    height: 750px;
+    margin-left: 25%;
 }
-
-.texto{
+p{
+    font-size: 22px;
+}
+.imagenNS{
+      width: 20vw;
+      height: 55vh;  
+      border-radius: 20px; 
+}
+.margenes{
+    padding: 0%;
+    margin: auto 37vh ;
+    border-radius: 20px;
     display: flex;
-    width: 90%;
-    height: 150%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
